@@ -3,7 +3,6 @@ import arrow from 'src/images/arrow.svg';
 
 import styles from './ArrowButton.module.scss';
 
-/** Функция для обработки открытия/закрытия формы */
 export type OnClick = () => void;
 
 type ArrowButtonProps = {
@@ -16,7 +15,6 @@ export const ArrowButton = ({
   onClick,
 }: ArrowButtonProps): React.JSX.Element => {
   return (
-    /* Не забываем указаывать role и aria-label атрибуты для интерактивных элементов */
     <div
       role="button"
       aria-label="Открыть/Закрыть форму параметров статьи"
